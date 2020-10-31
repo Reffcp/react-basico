@@ -3,7 +3,8 @@ import './styles/Badge.css'
 
 class Badge extends React.Component{
     render() {
-        return <div className="badge">
+        return <div className="badge-container">
+            <div className="badge">
             <div className="badge_header">
                 <img src="https://www.rebits.com.mx/wp-content/uploads/2020/04/cropped-Rebits-Logo-Oficial-11-1-198x50.png" alt="Logo conferencia"/>
             </div>
@@ -21,6 +22,7 @@ class Badge extends React.Component{
             <div className="badge_footer">
                 #rebitsconf
             </div>
+        </div>
         </div>;
     }
 }
