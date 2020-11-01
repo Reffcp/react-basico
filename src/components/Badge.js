@@ -3,20 +3,22 @@ import './styles/Badge.css'
 
 class Badge extends React.Component{
     render() {
+
         return <div className="badge-container">
             <div className="badge">
             <div className="badge_header">
-                <img src="https://www.rebits.com.mx/wp-content/uploads/2020/04/cropped-Rebits-Logo-Oficial-11-1-198x50.png" alt="Logo conferencia"/>
+                <img className="badge_header_img" src="https://firebasestorage.googleapis.com/v0/b/portafolio-personal-264fb.appspot.com/o/logos%2Flogo-cristian.png?alt=media&token=95a8dfc2-a219-466b-a037-4912a4387a32" alt="Logo conferencia"/>
             </div>
 
             <div className="badge_section-name">
-                <img className="badge_avatar" src="https://avatars2.githubusercontent.com/u/64700151?s=460&u=11dc93ca6a53b73fcb3c4463367479090f698f29&v=4" alt="Avatar"/>
-                <h1>Cristian <br/> Covarrubias</h1>
+                <img className="badge_avatar" src={this.props.avatar} alt="Avatar"/>
+                <h1>{this.props.firstName} 
+                <br/> {this.props.lastName} </h1>
             </div>
 
             <div className="badge_section-info">
-                <p>Frontend Engineer</p>
-                <p>@reffcp</p>
+                <h3>{this.props.jobTittle}</h3>
+                <div>@{this.props.twitter}</div>
             </div>
 
             <div className="badge_footer">

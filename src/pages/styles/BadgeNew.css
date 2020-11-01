@@ -1,0 +1,13 @@
+.BadgeNew__hero {
+    width: 100%;
+    padding: 2rem 0;
+    background: url("http://cristiancovarrubias.online/background-main.88e023265aae7b418491.png"), #1b1b25;
+    background-repeat: repeat;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.hero-img{
+    max-width: 350px;
+    width: 100%;
+}
